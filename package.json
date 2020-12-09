@@ -1,0 +1,26 @@
+{
+  "name": "organicstore",
+  "version": "1.0.0",
+  "description": "organic store cart app ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexotoo/organicstore.git"
+  },
+  "keywords": [
+    "MERN",
+    "app"
+  ],
+  "author": "alexOoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexotoo/organicstore/issues"
+  },
+  "homepage": "https://github.com/alexotoo/organicstore#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
