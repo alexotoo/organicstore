@@ -1,0 +1,9 @@
+main {
+  min-height: 80vh;
+}
+.star {
+  fill: #ffbb00;
+}
+h3 {
+  padding-top: 1rem;
+}
