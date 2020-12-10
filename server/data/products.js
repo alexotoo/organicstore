@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "green me alpha",
     image: "/images/veg1.jpg",
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "2",
     name: "carrots fresh",
     image: "/images/veg2.jpg",
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: "3",
     name: "Cabbage",
     image: "/images/veg3.jpg",
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "4",
     name: "Organic Tomatoes",
     image: "/images/veg4.jpg",
     description: "Sweet delicious organic tomatoes, Victorian Grown",
@@ -51,7 +47,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "5",
     name: "Garden eggs",
     image: "/images/veg5.jpg",
     description: "African garden eggs with full fresh food and spice flavour",
@@ -63,7 +58,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: "6",
     name: "green peper",
     image: "/images/veg6.jpg",
     description: "organice blend of African and Canadian origin",
@@ -75,7 +69,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "7",
     name: "beat vegatable",
     image: "/images/veg7.jpg",
     description:
@@ -88,7 +81,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "8",
     name: "Broccoli",
     image: "/images/veg8.jpg",
     description:
@@ -101,7 +93,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "9",
     name: "onions",
     image: "/images/veg9.jpg",
     description: "summer onions, they grow well in summer and last all year",
