@@ -70,7 +70,7 @@ const products = [
     brand: "sunfarms",
     category: "vegetable",
     price: 29.99,
-    countInStock: 0,
+    countInStock: 7,
     rating: 4,
     numReviews: 12,
   },
@@ -96,7 +96,7 @@ const products = [
     brand: "SunFarms",
     category: "vegetable",
     price: 29.99,
-    countInStock: 0,
+    countInStock: 1,
     rating: 4,
     numReviews: 12,
   },
@@ -114,4 +114,4 @@ const products = [
   },
 ];
 
-module.exports = products;
+export default products;
