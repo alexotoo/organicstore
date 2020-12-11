@@ -6,17 +6,19 @@ import Header from "./components/Header";
 import { Container } from "react-bootstrap";
 import HomePage from "./Pages/HomePage";
 import ProductPage from "./Pages/ProductPage";
+import CartPage from "./Pages/CartPage";
 
 function App() {
   return (
     <Router>
       <Header />
-      <Container>
-        <main className="py-3">
+      <main className="py-3">
+        <Container>
           <Route path="/" exact component={HomePage} />
-          <Route path="/Product/:id" component={ProductPage} />
-        </main>
-      </Container>
+          <Route path="/product/:id" component={ProductPage} />
+          <Route path="/cart/:id?" component={CartPage} />
+        </Container>
+      </main>
       <Footer />
     </Router>
   );
