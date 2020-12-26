@@ -5,16 +5,19 @@ import colors from "colors";
 import * as errorHanlers from "./middleware/errorMiddleware.js";
 import connectionDB from "./config/db.js";
 import productRoute from "./routes/productRoute.js";
+import userRoute from "./routes/userRoutes.js";
 
 dotenv.config();
 connectionDB();
 const app = express();
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("API on port....");
 });
 
 app.use("/api/products", productRoute);
+app.use("/api/users", userRoute);
 
 //error handling middleware
 app.use(errorHanlers.notFoundRoute);
