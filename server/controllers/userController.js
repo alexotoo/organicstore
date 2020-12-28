@@ -42,4 +42,38 @@ const getUserProfile = expAsyncHandler(async (req, res) => {
     throw new Error("user not found");
   }
 });
-export { authUser, getUserProfile };
+
+//@desc: register a new user
+//@route: POST /api/users
+//@access: public
+const registerUser = expAsyncHandler(async (req, res) => {
+  const { name, email, password } = req.body;
+
+  const isRegistedUser = await User.findOne({ email });
+
+  if (isRegistedUser) {
+    res.status(400);
+    throw new Error("user already registered");
+  }
+
+  const user = await User.create({
+    name,
+    email,
+    password,
+  });
+
+  if (user) {
+    res.status(201).json({
+      _id: user._id,
+      name: user.name,
+      email: user.email,
+      isAdmin: user.isAdmin,
+      token: generateToken(user._id),
+    });
+  } else {
+    res.status(404);
+    throw new Error("incorrect user data");
+  }
+});
+
+export { authUser, getUserProfile, registerUser };
