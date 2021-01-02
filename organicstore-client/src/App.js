@@ -7,6 +7,7 @@ import { Container } from "react-bootstrap";
 import HomePage from "./Pages/HomePage";
 import ProductPage from "./Pages/ProductPage";
 import CartPage from "./Pages/CartPage";
+import LoginPage from "./Pages/LoginPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <main className="py-3">
         <Container>
+          <Route path="/login" component={LoginPage} />
           <Route path="/" exact component={HomePage} />
           <Route path="/product/:id" component={ProductPage} />
           <Route path="/cart/:id?" component={CartPage} />
