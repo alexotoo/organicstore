@@ -11,6 +11,7 @@ import LoginPage from "./Pages/LoginPage";
 import RegisterPage from "./Pages/RegisterPage";
 import ProfilePage from "./Pages/ProfilePage";
 import ShippingPage from "./Pages/ShippingPage";
+import PaymentPage from "./Pages/PaymentPage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/product/:id" component={ProductPage} />
           <Route path="/cart/:id?" component={CartPage} />
           <Route path="/shipping" component={ShippingPage} />
+          <Route path="/payment" component={PaymentPage} />
           <Route path="/" exact component={HomePage} />
         </Container>
       </main>
