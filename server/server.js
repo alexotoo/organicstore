@@ -6,6 +6,7 @@ import * as errorHanlers from "./middleware/errorMiddleware.js";
 import connectionDB from "./config/db.js";
 import productRoute from "./routes/productRoute.js";
 import userRoute from "./routes/userRoutes.js";
+import orderRoute from "./routes/orderRoutes.js";
 
 dotenv.config();
 connectionDB();
@@ -18,6 +19,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/products", productRoute);
 app.use("/api/users", userRoute);
+app.use("/api/orders", orderRoute);
 
 //error handling middleware
 app.use(errorHanlers.notFoundRoute);
