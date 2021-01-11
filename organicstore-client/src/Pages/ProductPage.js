@@ -51,7 +51,7 @@ const ProductPage = ({ match, history }) => {
                 <h3>{product.name}</h3>
               </ListGroup.Item>
               <ListGroup.Item>
-                <p>Price: $ {product.price}</p>
+                <p>Price: GHS {product.price}</p>
               </ListGroup.Item>
               <ListGroup.Item>
                 <p>{product.description}</p>
@@ -71,7 +71,7 @@ const ProductPage = ({ match, history }) => {
                   <Row>
                     <Col>price:</Col>
                     <Col>
-                      <strong>${product.price} </strong>
+                      <strong>GHS {product.price} </strong>
                     </Col>
                   </Row>
                 </ListGroup.Item>
