@@ -5,6 +5,7 @@ import Message from "../components/Message";
 import { Link } from "react-router-dom";
 import { getOrderDetails } from "../store/actions/orderActions";
 import Loader from "../components/Loader";
+import FlutterWavePay from "../components/FlutterWavePay";
 
 const OrderPage = ({ match }) => {
   const orderId = match.params.id;
@@ -145,7 +146,14 @@ const OrderPage = ({ match }) => {
                 </Row>
               </ListGroup.Item>
 
-              <ListGroup.Item>paypal</ListGroup.Item>
+              <ListGroup.Item>
+                <FlutterWavePay
+                  amount={order.totalPrice}
+                  email={order.user.email}
+                  name={order.user.name}
+                  payment_options={order.paymentMethod}
+                />
+              </ListGroup.Item>
             </ListGroup>
           </Card>
         </Col>

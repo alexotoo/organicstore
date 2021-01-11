@@ -15,13 +15,13 @@ export default function FlutterWavePay({
     payment_options,
     customer: {
       email,
-      phonenumber: "07064586146",
       name,
     },
     customizations: {
       title: "Organic Store",
       description: "Payment for items in cart",
-      logo: "/public/images/veg.jpg",
+      logo:
+        "https://images.unsplash.com/photo-1518843875459-f738682238a6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1326&q=80",
     },
   };
 
@@ -36,9 +36,8 @@ export default function FlutterWavePay({
   };
 
   return (
-    <div className="btn">
-      <h1>pay</h1>
-      <FlutterWaveButton {...fwConfig} />
+    <div className="">
+      <FlutterWaveButton {...fwConfig} className="btn btn-success" />
     </div>
   );
 }
