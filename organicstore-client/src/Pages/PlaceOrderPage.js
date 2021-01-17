@@ -96,7 +96,7 @@ const PlaceOrderPage = ({ history }) => {
                           </Link>
                         </Col>
                         <Col md={4}>
-                          {item.qty} x GHS {item.price} = GHS
+                          {item.qty} x GHS {item.price} = GHS{" "}
                           {item.price * item.qty}
                         </Col>
                       </Row>

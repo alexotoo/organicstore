@@ -154,6 +154,7 @@ const OrderPage = ({ match }) => {
                   name={order.user.name}
                   payment_options={order.paymentMethod}
                 />
+                <Link className="">Proceed without payment</Link>
               </ListGroup.Item>
             </ListGroup>
           </Card>
